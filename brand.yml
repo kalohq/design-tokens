@@ -1,0 +1,6 @@
+color:
+  brand: !color-palette
+    rouge:
+      400: !color FDB3C8
+      500: !color EA5F6E
+      600: !color E05867
