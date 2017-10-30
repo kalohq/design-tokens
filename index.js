@@ -33,7 +33,7 @@ const ColorYamlType = new yaml.Type('!color', {
   },
 });
 
-const ColorPalatteYamlType = new yaml.Type('!color-palette', {
+const ColorPaletteYamlType = new yaml.Type('!color-palette', {
   // http://www.yaml.org/spec/1.2/spec.html#kind//
   kind: 'mapping',
 
@@ -51,10 +51,9 @@ const ColorPalatteYamlType = new yaml.Type('!color-palette', {
   },
 });
 
-// After our types are defined, it's time to join them into a schema.
+const schema = yaml.Schema.create([ColorYamlType, ColorPaletteYamlType]);
 
-const schema = yaml.Schema.create([ColorYamlType, ColorPalatteYamlType]);
-
+// Parse and dump
 fs.readFile(path.join(__dirname, 'brand.yml'), 'utf8', function(error, data) {
   var loaded;
 
