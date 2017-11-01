@@ -1,0 +1,39 @@
+color:
+  brand: !color-palette
+    rouge:
+      400: !color [FDB3C8, My Test String]
+      500: !color EA5F6E
+      600: !color E05867
+  secondary: !color-palette
+    navy:
+      400: !color FDB3C8
+      500: !color EA5F6E
+      600: !color E05867
+shapes:
+  radius:
+    small: !radius 4
+    large: !radius 10
+  spacing:
+    xsmall: !spacing 4
+    small: !spacing 8
+    medium: !spacing 16
+    large: !spacing 32
+  strokes:
+    
+      
+
+# -- types
+# !color string
+# !radius int
+# !pattern string
+# !stroke int
+# !typeface 
+# !image
+# !resource
+# !spacing
+# !line-height
+# -- meta
+# !gallery
+# !md
+# !color-palette
+# !note
